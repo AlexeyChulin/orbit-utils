@@ -17,7 +17,7 @@ for N = 1:Nmax
         u(N) = u(N) - 2*pi;
     end
     d_lambda = atan(cos(i)*tan(u(N)));
-    if(u(N) > pi/2) & (u(N) <= 3*pi/2)
+    if(u(N) > pi/2) && (u(N) <= 3*pi/2)
         d_lambda = d_lambda + pi;
     elseif(u(N) > 3*pi/2) 
         d_lambda = d_lambda + 2*pi;
